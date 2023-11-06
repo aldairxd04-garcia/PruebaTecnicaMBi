@@ -8,57 +8,56 @@
     </h2>
   </div>
 
-  <section class="row w-100 mx-auto mx-lg-0">
-    <div class="col-1"></div>
-    <div class="col-lg-3 col-md-12 d-flex flex-column custom-gap">
+  <section class="row w-100 mx-auto px-md-5 mx-lg-0">
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <div
-        class="py-4 bg-white rounded-3 d-flex flex-column align-items-center gap-4 h-50 position-relative linea-azul"
+        class="py-4 bg-white rounded-3 d-flex flex-column align-items-center justify-content-center gap-4 position-relative linea-azul"
+        style="margin: 30px"
       >
         <img class="" src="../../../../assets/Estrella.png" alt="estrella" />
-        <p style="text-align: justify" class="w-75">
-          Amplia experiencia como Director de Tecnologías de la
-          <span class="text-center d-block">información</span>
-        </p>
-      </div>
-
-      <div
-        class="py-4 bg-white rounded-3 d-flex flex-column align-items-center gap-4 position-relative linea-azul"
-      >
-        <img class="" src="/assets/Estrella.png" alt="estrella" />
-        <p style="text-align: justify" class="w-75">
-          Ingeniero en proyectos de implementación de ERP BAAN V y diseño em
-          implementación de red de comunicaciones y telecomunicaciones CIDESI
+        <p style="text-align: center" class="w-75">
+          Amplia experiencia como Director de Tecnologías de la Información
+          <!-- <span class="text-center d-block">información</span> -->
         </p>
       </div>
     </div>
 
-    <div class="col-lg-7 col-md-12 d-flex flex-column custom-gap mx-0 mx-lg-5">
-      <ul
-        class="d-flex flex-column justify-content-between list-unstyled h-100"
-      >
+    <div class="col-lg-8 col-md-6 col-sm-12">
+      <ul class="d-flex flex-column list-unstyled h-100" style="margin: 30px">
         <li class="mt-2 d-flex" *ngFor="let descripcion of descripciones">
           <div>
-            <img
-              src="/assets/Flecha.png"
-              alt="Flecha"
-              class="mr-2"
-            />
+            <img src="/assets/Flecha.png" alt="Flecha" class="mr-2" />
           </div>
           <div>
             <p>{{ descripcion }}</p>
           </div>
         </li>
       </ul>
-
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <div
-        class="pt-4 pb-2 col-lg-6 col-md-12 bg-white rounded-3 d-flex flex-column align-items-center gap-4 position-relative linea-azul"
+        class="py-4 bg-white rounded-3 d-flex flex-column align-items-center justify-content-center gap-2 position-relative linea-azul"
+        style="margin: 30px"
       >
-        <img class="" src="/assets/Estrella.png" alt="estrella" />
+        <img class="" src="../../../../assets/Estrella.png" alt="estrella" />
+        <p style="text-align: center" class="w-75">
+          Ingeniero en proyectos de implementación de ERP BAAN V y diseño em
+          implementación de red de comunicaciones y telecomunicaciones CIDESI
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-6 col-sm-12">
+      <div
+        class="py-4 bg-white rounded-3 d-flex flex-column align-items-center justify-content-center gap-4 position-relative linea-azul"
+        style="margin: 30px"
+      >
+        <img class="" src="../../../../assets/Estrella.png" alt="estrella" />
         <ul
           class="d-flex px-1 flex-column w-75 justify-content-between list-unstyled w-100"
         >
-          <li style="padding-top: 2.5%" class="" *ngFor="let puesto of puestos">
-            <span class="d-inline-block circle rounded-5"></span>{{ puesto }}
+          <li style="padding-top: 1.5%" class="" *ngFor="let puesto of puestos">
+            <span class="d-inline-block circle rounded-5 mx-3"></span
+            >{{ puesto }}
           </li>
         </ul>
       </div>
