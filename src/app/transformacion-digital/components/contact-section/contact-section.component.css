@@ -1,0 +1,40 @@
+.section-bg {
+  background-color: var(--color-F6F7F8);
+}
+.custom-margin{
+  margin-top: 15%;
+}
+
+.line {
+  height: .4rem;
+  width: 3.5rem;
+  background-color: var(--color-1C8C90);
+  display: inline-block;
+
+}
+
+
+form{
+  padding: 5% 11%;
+}
+
+input{
+  border-color: var(--color-F6F7F8);
+  padding: .2rem 0;
+}
+
+.smaller-font {
+  font-size: .8rem;
+}
+
+.custom-color{
+  color: var(--color-1C8C90);
+}
+.custom-color2{
+  color: var(--color-1EBA88);
+}
+
+.custom-button{
+  background-color: #006484;
+
+}

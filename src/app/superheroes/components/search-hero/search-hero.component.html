@@ -1,0 +1,24 @@
+<form
+  (submit)="emitSuperheroName()"
+  class="row w-100 bg-white rounded-4 p-3 mt-5 mx-auto  align-items-center shadow "
+>
+  <div class="col-lg-11 col-md-10 ">
+    <div class="form-group fw-semibold">
+      <label class="w-100 " for="heroName">
+        <span>Nombre del Superhéroe:</span>
+        <input
+          type="text"
+          id="heroName"
+          class=" form-control my-2  rounded-4"
+          [(ngModel)]="heroName"
+          name="heroName"
+        />
+      </label>
+    </div>
+  </div>
+  <div class="col-lg-1 col-md-2 mt-4">
+    <button type="submit" class="btn btn-dark  btn-block fw-semibold">
+      Buscar
+    </button>
+  </div>
+</form>

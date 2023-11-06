@@ -1,0 +1,78 @@
+<section class="h-100 w-100 container d-flex  flex-column justify-content-between  align-items-center  ">
+  <div *ngIf="superhero; else err" class="my-3 w-100  ">
+    <h2 class="text-center fs-2 text-primary-emphasis text-uppercase  fw-semibold">{{ superhero.name }}</h2>
+    <img
+      [src]="superhero.images.sm"
+      alt="{{ superhero.name }}"
+      class="img-fluid rounded my-md-3 mx-auto shadow-sm  d-block"
+    />
+    <section class="row mt-4">
+
+      <div class="col-md-12">
+        <h3 class="cutstom-color1 fw-semibold ">Biografía:</h3>
+        <ul class="list-group shadow ">
+          <li
+            *ngFor="let item of superhero.biography | keyvalue"
+            class="list-group-item"
+          >
+            {{ item.key | titlecase }}: {{ item.value }}
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="row mt-4">
+      <div class="col-md-6">
+        <h3 class="cutstom-color1 fw-semibold ">Estadísticas de poder:</h3>
+        <ul class="list-group shadow ">
+          <li
+            *ngFor="let item of superhero.powerstats | keyvalue"
+            class="list-group-item"
+          >
+
+            {{ item.key | titlecase }}: {{ item.value }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3 class="cutstom-color1 fw-semibold ">Apariencia:</h3>
+        <ul class="list-group shadow ">
+          <li
+            *ngFor="let item of superhero.appearance | keyvalue"
+            class="list-group-item"
+          >
+            {{ item.key | titlecase }}: {{ item.value }}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="row mt-4">
+      <div class="col-12">
+        <h3 class="cutstom-color1 fw-semibold ">Conexiones:</h3>
+        <ul class="list-group shadow ">
+          <li
+            *ngFor="let item of superhero.connections | keyvalue"
+            class="list-group-item"
+          >
+            {{ item.key | titlecase }}: {{ item.value }}
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <ng-template #err>
+    <section class=" w-50 my-5 h-100 gap-2  text-center d-flex flex-column align-items-center   ">
+      <h3 class="bg-black text-white  shadow-sm  text-bg-info  p-3 rounded-4">
+        Por favor, introduce un superhéroe
+      </h3>
+      <h3 class="text-bg-danger rounded-4">{{ error }}</h3>
+      <div class="w-50 ">
+      <img class="img-fluid rounded border " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYi1fntUb8Px7WgAD0G9DHlsyHdPvHsiJEse2ZfUPZoOEKvjZLkJy6jLiDMGQ4sn3SGLo&usqp=CAU" alt="">
+
+      </div>
+
+    </section>
+  </ng-template>
+
+</section>

@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+transformacion-hero-section{
+  font-family: 'Roboto', sans-serif;
+}
+
+main{
+  font-family: 'Roboto', sans-serif;
+}
+ */
+
+ section {
+  --color-1C8C90: #1C8C90;
+  --color-1EBA88: #1EBA88;
+  --color-F6F7F8: #F6F7F8;
+}

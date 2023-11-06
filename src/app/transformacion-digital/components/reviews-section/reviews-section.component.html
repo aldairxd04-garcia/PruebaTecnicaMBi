@@ -1,0 +1,11 @@
+<section class="w-100 h-100 d-flex flex-column gap-5 py-5">
+  <h2 class="text-center">
+    <strong>Evento gratuito</strong> dirigido a <br> profesionales de la industria
+  </h2>
+  <div style="text-align: justify;" class="row w-100 fw-semibold justify-content-center px-4 px-md-0  gap-5">
+    <p *ngFor="let resenia of resenias" class="col-lg-4 col-md-6 col-sm-12 d-flex custom-width">
+      <span class="rounded-5 line"></span>
+      <span class="w-100">{{resenia}}</span>
+    </p>
+  </div>
+</section>

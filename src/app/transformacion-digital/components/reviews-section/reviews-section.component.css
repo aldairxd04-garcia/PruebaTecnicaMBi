@@ -1,0 +1,22 @@
+h2 {
+  color: var(--color-1EBA88);
+}
+.line {
+  height: 1.4rem;
+  width: .3rem;
+  background-color: var(--color-1C8C90);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.custom-width {
+  width: 100%;
+}
+
+
+@media (min-width: 992px) {
+  .custom-width {
+    width: 25%;
+  }
+}

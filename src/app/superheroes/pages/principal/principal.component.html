@@ -1,0 +1,17 @@
+
+<section class=" font-roboto  ">
+  <superheroes-navbar></superheroes-navbar>
+  <main class="h-100 w-100 " >
+    <section class="container h-100 w-100 ">
+      <superhero-search-hero
+      (onHeroName)="onSuperheroReceived($event)"
+    ></superhero-search-hero>
+    <superhero-info-hero
+      [error]="errorInfo"
+      [superhero]="superheroInfo"
+    ></superhero-info-hero>
+    </section>
+
+  </main>
+</section>
+

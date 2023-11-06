@@ -1,0 +1,54 @@
+section {
+  background-color: #2F6172;
+}
+
+.p-custom-color {
+  color: var(--color-1EBA88);
+}
+
+.img-background {
+  z-index: 0;
+}
+
+.div-hero {
+  height: 100vh;
+  z-index: 1;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: justify;
+}
+
+.p-hero {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.btn-custom {
+  background-color: var(--color-1C8C90);
+  border-color: var(--color-1C8C90);
+  width: 60%;
+  padding: 0.6rem 0;
+}
+
+.btn-custom:hover {
+  background-color: #3FB7BD;
+}
+
+.custom-width {
+  width: 100%; /* Ancho completo en dispositivos móviles */
+}
+
+@media (min-width: 768px) {
+  .custom-width {
+    width: 50%; /* Utiliza el ancho del 75% en pantallas md y superiores */
+  }
+
+  section {
+    background-color: var(--color-F6F7F8);
+  }
+}
