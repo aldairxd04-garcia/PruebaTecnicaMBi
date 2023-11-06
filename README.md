@@ -2,7 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-## Links disponibles
+## Rutas disponibles
+
+Las ruta de la api es /superheroes
+la ruta raiz es la del mockup
 
 ## Development server
 
